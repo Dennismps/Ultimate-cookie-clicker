@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    background-image: url("Background.png");
+    background-color: #cccccc;
+}
+
+
+#Cookies{
+    color: blue;
+    position: fixed;
+    right: 1000px;
+    font-size: 100px;
+}
+
+.Cookie_button {
+    width:400px;
+    position: fixed;
+    top: 200px;
+}
+.Cookie_button:active {
+    width:410px;
+    
+}
+.left {
+    width: 20px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    left: 400px;
+    top: 0px;
+}
+
+.right {
+    width: 20px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    right: 400px;
+    top: 0px;
+}
+
+.hirebaker {
+    position: fixed;
+    right: 0;
+}
+
+#cookie-text {
+    color: white;
+    font-size: 50px;
+    position: fixed;
+    left: 80px;
+}

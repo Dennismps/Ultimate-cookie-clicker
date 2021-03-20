@@ -7,7 +7,7 @@ function update(){
     document.getElementById('text').innerHTML = "Cookies: " + cookiecount;
     document.title = cookiecount + "Cookies";
     document.getElementById('amountAutoClick').innerHTML = "You Own " + autoclicker + " Auto Clickers";
-    document.getElementById('costAutoCliker').innerHTML = ((autoclicker+1) * 12) + "Cookies";
+    document.getElementById('costAutoCliker').innerHTML = "Auto Clickers cost " + ((autoclicker+1) * 12) + " Cookies";
 }
 
 

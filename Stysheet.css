@@ -1,7 +1,7 @@
 body{
     margin: 0;
     background-image: url("Background.png");
-    background-color: #cccccc;
+    background-color: black;
 }
 
 #bakerPriceText{
@@ -94,7 +94,6 @@ body{
     right: 10px;
     top: 270px;
 }
-
 
 .right_divide {
     width: 30px;

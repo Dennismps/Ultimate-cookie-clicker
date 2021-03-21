@@ -32,16 +32,16 @@ body {
   outline: none;
   color: black;
   position: fixed;
-  background-color: #43ccd1;
+  background-color: lightgray;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #137c80;
+  box-shadow: 0 9px gray;
   right: 10px;
   bottom: 20px;
 }
 #save:active{
-  background-color: #43ccd1;
-  box-shadow: 0 5px #137c80;
+  background-color: lightgray;
+  box-shadow: 0 5px gray;
   transform: translateY(4px);
 }
 
@@ -55,17 +55,17 @@ body {
   outline: none;
   color: black;
   position: fixed;
-  background-color: #43ccd1;
+  background-color: lightgray;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #137c80;
+  box-shadow: 0 9px gray;
   right: 120px;
   bottom: 20px;
 }
 
 #load:active{
-  background-color: #43ccd1;
-  box-shadow: 0 5px #137c80;
+  background-color: lightgray;
+  box-shadow: 0 5px gray;
   transform: translateY(4px);
 }
 

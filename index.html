@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookeis 0</title>
+    <title>0 Cookeis</title>
     <link rel="stylesheet" href="Stysheet.css">
+    <link rel="icon" href="Cookie_main.png">
 </head>
 <body>
+    <script src="index.js"></script>
+    <!-- this links to js -->
+
     <p id="text">Cookies: 0</p>
-
-
     <a href=# onclick="bakeCookie()"><img src="Cookie_main.png" class="Cookie_button"></a>
+    <!-- this is the cookie code -->
 
    
+
+    <a href="#" onclick="hireBaker()"><img src=baker.jpg width="50px" class="hirebaker"></a>
+    <p id="bakerPriceText">Bakerprice: 20</p>
+    <p id="bakerAmount">Bakers: 0</p>
+    <p id="cookiePerClick">Cookies per click: 1</p>
+    <!--this is the baker code-->
+
+    <img src="pixel_wood.png" class="right_divide">
+    <img src="pixel_wood.png" class="left_divde">
     
-    <input type="button" value="Hire a baker" onclick="hireBaker()" class="hirebaker">
-    <script src="index.js"></script>
-    <p id="bakerPriceText"></p>
-    <div class="left"></div>
-    <div class="right"></div>
-    <button><a href="#" onclick="save()">Save</a></button>
-    <button><a href="#" onclick="load()">Load</a></button>
+    <a href="#" onclick="save()" ><span id="save">Save</span></a>
+    <a href="#" onclick="load()" id="load">Load</a>
     
-    <button><a href="#" onclick="buyAutoClicker()"><img src=cursor.png width="30px" alt=""></a></button>
-    <p id="costAutoCliker">12 cookies</p>
-    <p id="amountAutoClick">You own 0 Auto clickers</p>
+    <a href="#" onclick="buyAutoClicker()"><img src=cursor.png width="30px" class="auto"></a>
+    <p id="costAutoCliker">Auto Clickers cost: 12 </p>
+    <p id="amountAutoClick">Auto clickers: 0</p>
+    <p id="cps">Cookies per secons: 0</p>
     
 </body>
 </html>

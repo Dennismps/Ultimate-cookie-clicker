@@ -2,12 +2,15 @@ var cookiecount = 0;
 var cpc = 1;
 var bakerprice = 20;
 var autoclicker = 0;
+var bakers = 0;
+var cps = 0;
 
 function update(){
     document.getElementById('text').innerHTML = "Cookies: " + cookiecount;
-    document.title = cookiecount + "Cookies";
-    document.getElementById('amountAutoClick').innerHTML = "You Own " + autoclicker + " Auto Clickers";
-    document.getElementById('costAutoCliker').innerHTML = "Auto Clickers cost " + ((autoclicker+1) * 12) + " Cookies";
+    document.title = cookiecount + " Cookies";
+    document.getElementById('amountAutoClick').innerHTML = "Auto clickers: " + autoclicker;
+    document.getElementById('costAutoCliker').innerHTML = "Auto clicker cost:  " + ((autoclicker+1) * 12);
+    document.getElementById('cps').innerHTML = "Cookies per secons: " + cps;
 }
 
 
@@ -21,9 +24,11 @@ setInterval(timer, 1000)
 function buyAutoClicker() {
     if (cookiecount >= ((autoclicker+1) * 12)) {
         cookiecount = cookiecount - ((autoclicker+1) * 12);
-        autoclicker = autoclicker +1;
+        autoclicker = Math.round(autoclicker +1.1);
+        cps = 1.1 * autoclicker;
         update()
-        
+    }else {
+        alert("You dont have enough cookies")
     }
 }
 
@@ -52,10 +57,13 @@ function bakeCookie() {
 function hireBaker() {
     if(cookiecount >= bakerprice) {
         cpc += 1;
+        bakers += 1;
         cookiecount -=bakerprice;
         bakerprice = Math.round(bakerprice * 1.7) ;
         document.getElementById('text').innerHTML = "Cookies: " + cookiecount;
         document.getElementById('bakerPriceText').innerHTML = "Bakerprice: " + bakerprice;
+        document.getElementById('bakerAmount').innerHTML = "Bakers: " + bakers;
+        document.getElementById('cookiePerClick').innerHTML = "Cookies per click: " + cpc;
     } else {
         alert("You dont have enough cookies")
     }

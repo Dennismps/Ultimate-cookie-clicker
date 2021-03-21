@@ -9,7 +9,7 @@ function update(){
     document.getElementById('text').innerHTML = cookiecount + " Cookies";
     document.title = cookiecount + " Cookies";
     document.getElementById('amountAutoClick').innerHTML = "Auto clickers: " + autoclicker;
-    document.getElementById('costAutoCliker').innerHTML = "Auto clicker cost:  " + ((autoclicker+1) * 12);
+    document.getElementById('costAutoCliker').innerHTML = "Auto Clickers cost:  " + ((autoclicker+1) * 12);
     document.getElementById('cps').innerHTML = "Cookies per secons: " + cps;
 }
 

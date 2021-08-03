@@ -1,0 +1,75 @@
+html,
+body {
+  margin: 0;
+  background-image: url(background.png);
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  position: fixed;
+  font-family: 'Roboto', sans-serif;
+}
+
+#coin {
+    display: block;
+    position: absolute;
+    top: 50px;
+    width: 300px;
+    image-rendering: pixelated;
+    right: 50px;
+    transition: all 0.1s;
+  }
+  #coin:hover {
+    transform: scale(110%);
+  }
+  
+  #coin:active {
+    transform: scale(90%);
+
+  }
+.border{
+    background: black;
+    position: fixed;
+    margin: 0px;
+
+}
+#bor1{
+    width: 10px;
+    height: 100%;
+    top: 0px;
+    right: 400px;
+}
+
+#bor2{
+    width: 400px;
+    height: 10px;
+    top: 450px;
+    right: 00px;
+}
+
+#botright{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    height: 520px;
+}
+
+.stats{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+#cointext{
+    top: 40px;
+    
+
+}
+
+#coinspersec{
+    top: 60px;
+}

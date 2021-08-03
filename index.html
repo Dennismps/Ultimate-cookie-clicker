@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coins</title>
+    <link rel="icon" href="Main-coin.png" />
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--borders-->
+    <div class="border" id="bor1"></div>
+    <div class="border" id="bor2"></div>
+    <div id="botright">
+        <h1 class="stats" id="cointext">0 Coins</h1>
+        <h1 class="stats" id="coinspersec">0 Coins per second</h1>
+    </div>
+    
+    <img src="Main-coin.png" alt="" id="coin" usemap="#coinmap" onclick="coinclick()">
+
+    <map name="coinmap">
+        <area shape="circle" coords="13,13, 10" href="coffee.htm">
+    </map>
+    <!--This is the main Coin-->
+    <script src="index.js"></script>
+</body>
+</html>

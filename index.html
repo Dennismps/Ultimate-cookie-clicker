@@ -12,16 +12,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="bg"></div>
     <!--borders-->
+    
+
+
+    <div id="Right">
+        <h1 class="Title" id="cointext">0 Coins</h1>
+        <h1 class="Title" id="coinspersec">0 Coins per second</h1>
+        <img src="Main-coin.png" alt="" id="coin" usemap="#coinmap" onclick="coinclick()">
+    </div>
+
+
+    <div id="midRight">
+        <h1 class="Title" id="coinvar">Coin varients</h1>
+    </div>
+    <div id="midLeft">
+        <h1 class="Title" id="Multipliers">Multipliers</h1>
+    </div>
+    <div id="Left">
+        <h1 class="Title" id="Towers">Towers</h1>
+    </div>
+
     <div class="border" id="bor1"></div>
     <div class="border" id="bor2"></div>
-    <div id="botright">
-        <h1 class="stats" id="cointext">0 Coins</h1>
-        <h1 class="stats" id="coinspersec">0 Coins per second</h1>
-    </div>
-    
-    <img src="Main-coin.png" alt="" id="coin" usemap="#coinmap" onclick="coinclick()">
-
+    <div class="border" id="bor3"></div>
+   
     <map name="coinmap">
         <area shape="circle" coords="13,13, 10" href="coffee.htm">
     </map>

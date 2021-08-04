@@ -1,13 +1,45 @@
+@font-face {
+    font-family: pixel;
+    src: url(pixelfont.TTF);
+}
+
 html,
 body {
   margin: 0;
-  background-image: url(background.png);
-  width: 100%;
-  height: 100%;
+  width: 1920px;
+  height: 1080px;
+  background-color: black;
+  background-image: url(bg.png);
   padding: 0px;
+
+  background-size: 64px;
+  image-rendering: pixelated;
+
   position: fixed;
-  font-family: 'Roboto', sans-serif;
+  font-family: pixel;
 }
+
+#bg{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+#atlas{
+    top: 0;
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    transform: scale(15
+    )
+}
+
+
+
 
 #coin {
     display: block;
@@ -16,7 +48,7 @@ body {
     width: 300px;
     image-rendering: pixelated;
     right: 50px;
-    transition: all 0.1s;
+    transition: all 0.05s;
   }
   #coin:hover {
     transform: scale(110%);
@@ -29,6 +61,7 @@ body {
 .border{
     background: black;
     position: fixed;
+ 
     margin: 0px;
 
 }
@@ -40,36 +73,91 @@ body {
 }
 
 #bor2{
-    width: 400px;
-    height: 10px;
-    top: 450px;
-    right: 00px;
+    width: 10px;
+    height: 100%;
+    top: 0px;
+    left: 506.66px;
 }
 
-#botright{
+#bor3{
+    width: 10px;
+    height: 100%;
+    top: 0px;
+    left: 1013.32px;
+}
+
+
+#Right{
     position: fixed;
     right: 0px;
     bottom: 0px;
     width: 400px;
     margin: 0;
     padding: 0;
-    height: 520px;
+    height: 100%;
+
 }
 
-.stats{
+#Left{
+  
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 506.66px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#midRight{
+   
+    position: fixed;
+    left: 1013.32px;
+    bottom: 0px;
+    width: 506.66px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#midLeft{
+
+    position: fixed;
+    left: 506.66px;
+    bottom: 0px;
+    width: 506.66px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.Title{
     position: relative;
     margin: 0;
     padding: 0;
-    text-align: center;
     color: white;
+    text-align: center;
+
 }
 
+#coinvar{
+    top: 20px;
+}
+
+#Multipliers{
+    top: 20px;
+
+}
+
+#Towers{
+    top: 20px;
+
+}
 #cointext{
-    top: 40px;
+    top: 450px;
     
 
 }
 
 #coinspersec{
-    top: 60px;
+    top: 500px;
 }
